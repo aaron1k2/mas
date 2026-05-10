@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Letter For You</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      font-family: 'Poppins', sans-serif;
+      position: relative;
+    }
+
+    /* Floating Flowers */
+
+    .flower {
+      position: absolute;
+      font-size: 28px;
+      animation: floatFlowers linear infinite;
+      opacity: 0.8;
+    }
+
+    .flower:nth-child(1) {
+      left: 5%;
+      animation-duration: 10s;
+      animation-delay: 0s;
+    }
+
+    .flower:nth-child(2) {
+      left: 20%;
+      animation-duration: 14s;
+      animation-delay: 2s;
+    }
+
+    .flower:nth-child(3) {
+      left: 40%;
+      animation-duration: 11s;
+      animation-delay: 1s;
+    }
+
+    .flower:nth-child(4) {
+      left: 60%;
+      animation-duration: 13s;
+      animation-delay: 4s;
+    }
+
+    .flower:nth-child(5) {
+      left: 80%;
+      animation-duration: 9s;
+      animation-delay: 3s;
+    }
+
+    .flower:nth-child(6) {
+      left: 92%;
+      animation-duration: 15s;
+      animation-delay: 5s;
+    }
+
+    @keyframes floatFlowers {
+      0% {
+        transform: translateY(110vh) rotate(0deg);
+        opacity: 0;
+      }
+
+      10% {
+        opacity: 1;
+      }
+
+      100% {
+        transform: translateY(-120vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+
+    /* Letter Box */
+
+    .letter-box {
+      width: 85%;
+      max-width: 700px;
+      background: rgba(255,255,255,0.95);
+      padding: 40px;
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease;
+      z-index: 10;
+      backdrop-filter: blur(5px);
+    }
+
+    h1 {
+      text-align: center;
+      color: #ff4b6e;
+      margin-bottom: 25px;
+      font-size: 34px;
+      animation: glow 2s infinite alternate;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.9;
+      color: #444;
+      text-align: justify;
+    }
+
+    .signature {
+      margin-top: 35px;
+      text-align: right;
+      font-size: 20px;
+      color: #ff4b6e;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes glow {
+      from {
+        text-shadow: 0 0 10px #ff7b9c;
+      }
+
+      to {
+        text-shadow: 0 0 20px #ff4b6e,
+                     0 0 30px #ff4b6e;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Animated Flowers -->
+  <div class="flower">🌸</div>
+  <div class="flower">🌹</div>
+  <div class="flower">🌺</div>
+  <div class="flower">🌷</div>
+  <div class="flower">💐</div>
+  <div class="flower">🌸</div>
+
+  <!-- Letter -->
+  <div class="letter-box">
+
+    <h1>💌 A Letter For You</h1>
+
+    <p>
+      Dear Mamata, <br><br>
+
+      Good morning, my love. I hope this message finds you well and fills your heart with warmth and happiness.
+      You always ask me where I was busy, so here is my answer — I was busy to sharpen my skills. ❤️
+      <br><br>
+
+      I just want you to know that you are the most important person in my life.
+      Every single day, I find more reasons to appreciate you, admire you, and love you even more than before.
+      Your smile, your care, your presence — everything about you makes my life brighter and more beautiful.
+      <br><br>
+
+      I also want to sincerely apologize for all the times I hurt you, knowingly or unknowingly.
+      From now onward, I promise I will try my best to become a better person for you and make you happy in every possible way.
+      <br><br>
+
+      Maybe these words are simple, but they are coming straight from my heart.
+      I truly hope you like this letter, and I hope you will always stay with me through every moment of life.
+      <br><br>
+
+      I love you so much, and I will always love you with all my heart.
+      <br><br>
+
+      With my heartfelt love to my Korean nurse, Mamata Mahato. 💖
+    </p>
+
+    <div class="signature">
+      —your long distance love 
+<br><br>
+Aaron
+    </div>
+
+  </div>
+
+</body>
+</html>
